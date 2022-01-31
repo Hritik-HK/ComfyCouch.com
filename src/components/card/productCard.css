@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+.card-container{
+    width: 365px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.add-to-cart-animation{
+  width: 365px;
+}
+
+.card-container:hover{
+  transform: translateY(-5px);
+}
+
+.card-container img{
+ height: 250px;
+ width: 365px;
+ border-radius: 5px;
+}
+
+.item-detail-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+ font-family: 'Roboto', sans-serif;
+ font-weight: bold;
+ color: rgb(63, 60, 60);
+
+}
+.item-detail{
+  width: 60%;
+}
+
+.card-btn{
+  border-radius: 4px;
+  background-color: #f4511e;
+  font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    border-style: none;
+    padding: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin:0 5px;
+}
+
+.card-btn:hover{
+  background-color: #d43200;
+}
+

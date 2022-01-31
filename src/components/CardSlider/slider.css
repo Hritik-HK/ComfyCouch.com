@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+
+.slider-container h2{
+    text-align: center;
+}
+
+.slider-cards{
+    padding-left: 90px;
+}
+
+ .slick-dots li.slick-active button:before {
+    font-size:1rem;
+    color: gray;
+  }
+
+  .slider-container .right-arrow{
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    top:45%;
+    right: 2.1rem;
+    font-size: 2rem;
+}
+
+.slider-container .left-arrow{
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  top:45%;
+  left: 1rem;
+  font-size: 2rem;
+}
+
+
+.new-releases{
+    margin:6rem;
+    font-size: 2.2rem;
+    font-family: 'KoHo', sans-serif;
+}
+
+ .explore-more{
+    text-align: center;
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding:20px 0;
+    font-size: 3rem;
+    color: white;
+    font-family: 'KoHo', sans-serif;
+    cursor: pointer;
+}
+.explore-more a{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.cart-container, .cart-overlay{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 30;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-overlay{
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.cart-inner{
+    position: relative;
+    height: 670px;
+    width: 1100px;
+    background-color: white;
+    z-index: 35;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cart-close-icon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cart-inner .myCart{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    padding: 5px;
+    color: rgb(71, 70, 69);
+    margin-bottom: 20px;
+
+}
+.cart-inner .myCart h1{
+    margin-left: 35px;
+}
+.cart-inner hr{
+  border-top: 3px solid rgb(219, 216, 216);
+}
+
+.myCart-items-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myCart-items{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
+    width: 680px;
+}
+
+.cart-continue-shopping{
+    color: rgb(148, 140, 140);
+    font-size: 1.2rem;
+    margin: 5px;
+    text-align: center;
+}
+
+.myCart-total{
+    background-color: rgb(233, 233, 233);
+    font-size: 2rem;
+    font-family: 'Dongle', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.order-details{
+    height: 46px;
+}
+.order-details div{
+    text-align: center;
+    display: inline-block;
+    margin:0 10px;
+    width: 70px;
+}
+
+.myCart-total button{
+    border-style: none;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.checkout-button{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.myCart-total button:hover{
+    background-color: rgb(85, 85, 85);
+
+}
+
+.continue-shopping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.continue-shopping div{
+  margin:0 10px;
+}
+
+.cart-empty{
+      height: 500px;
+      width: 1070px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.cart-empty img{
+    height: 450px;
+}

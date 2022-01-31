@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.products-page-container{
+    font-family: 'Rubik', sans-serif;
+    padding: 0 130px;
+}
+
+.products-page-container-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom:30px;
+}
+
+.products-page-container-header h1{
+    font-size: 2rem;
+}
+
+.products-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-page-container-card{
+    margin: 25px 0;
+}

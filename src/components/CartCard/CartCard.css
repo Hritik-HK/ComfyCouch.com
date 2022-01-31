@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+
+.cartCard-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 170px;
+    width: 630px;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.cart-product-detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cart-product-detail-container img{
+    height: 150px;
+    width: 220px;
+    margin:0 20px ;
+}
+
+.cart-product-detail{
+    display: inline-block;
+}
+
+.cart-product-quantity{
+    margin: 10px;
+    font-size: 1rem;
+ 
+}
+
+.cart-product-quantity div{
+    display: inline-block;
+    border: 1px solid rgb(119, 117, 117);
+    padding: 2px;
+    width: 25px;
+    text-align: center;
+}
+
+.cart-product-detail button{
+    font-size: 0.8rem;
+    border-style: none;
+    background-color: rgb(230, 39, 5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.cart-product-quantity .minus, .plus{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}

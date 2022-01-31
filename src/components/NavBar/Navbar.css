@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    font-family: 'Dongle', sans-serif;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 15px 0 10px grey;
+    position:sticky;
+    top: 0;
+    z-index: 20;
+} 
+.nav-bar li{
+    display: inline-block;
+}
+.text-links-container{
+   padding-top: 10px;
+}
+
+.text-links-container .text-link{
+    text-decoration: none;
+    color: rgb(224, 60, 0); 
+    letter-spacing: 2px;
+}
+.logo{
+    width: 160px;
+}
+
+.text-links-container li{
+    font-size: 2.2rem;
+    padding: 0 35px;
+   
+}
+
+
+
+.icon-links-container li{
+    padding: 0 15px;
+}
+
+.icon-links-container li div{
+   text-align: center;
+   cursor: pointer;
+}
+.icon-links-container p{
+    font-size: 1.3rem;
+   color: rgb(34, 33, 33);
+}
+.icon-account{
+    width: 30px;
+
+}
+
+.icon-links-container .icon-link{
+    text-decoration: none;
+}
