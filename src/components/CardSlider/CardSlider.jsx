@@ -69,7 +69,7 @@ export default function  CardSlider(props) {
     </Slider>
 
     <div className='explore-more'>
-    <Link to="/products">
+    <Link to="/ComfyCouch.com/products">
     <Typewriter
   
   options={{

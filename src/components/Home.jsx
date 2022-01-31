@@ -30,7 +30,7 @@ export default function Home(props) {
   }} />
        </h2>
        <p>A series of professionally-styled living rooms <br/>to help jumpstart your imagination.</p>
-       <Link to="/products"><button>EXPLORE NOW</button></Link>
+       <Link exact to="/ComfyCouch.com/products"><button>EXPLORE NOW</button></Link>
       </div>
     </div>
 

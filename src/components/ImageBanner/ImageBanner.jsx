@@ -56,7 +56,7 @@ return ()=>{
            <div>
 
            </div>
-           <Link to="/products" className='banner-btn'><span>SHOP NOW</span></Link>
+           <Link exact to="/ComfyCouch.com/products" className='banner-btn'><span>SHOP NOW</span></Link>
            </div>
 
           </div>

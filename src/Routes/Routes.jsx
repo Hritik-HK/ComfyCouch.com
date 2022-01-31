@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
-import Home from "../Home";
-import Products from "../Products";
-import About from '../../About';
+import Home from "../components/Home";
+import Products from "../components/Products";
+import About from '../components/About';
 import {Routes, Route,useLocation} from "react-router-dom";
 
 export default function AllRoutes({productsData,AddToCart}) {
@@ -16,13 +16,13 @@ useEffect(() => {
   return (<div>
        <Routes>
 
-      <Route exact path="/" element={<Home AddToCart={AddToCart} />} />
+      <Route exact path="/ComfyCouch.com" element={<Home AddToCart={AddToCart} />} />
 
-      <Route exact path="/products" element={<Products 
+      <Route exact path="/ComfyCouch.com/products" element={<Products 
       productsData={productsData} 
       AddToCart={AddToCart}
       />} />
-      <Route exact path="/aboutUs" element={<About/>} />
+      <Route exact path="/ComfyCouch.com/aboutUs" element={<About/>} />
 
     </Routes>
 </div>);

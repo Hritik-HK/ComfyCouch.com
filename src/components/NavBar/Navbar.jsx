@@ -12,20 +12,20 @@ function Navbar({handleLogin,handleCart}){
 
     return (
     <header className="nav-bar" >
-    <Link  to="/" ><img className="logo" src={logo} alt="logo" /></Link>
+    <Link exact to="/ComfyCouch.com" ><img className="logo" src={logo} alt="logo" /></Link>
 
     <nav className="text-links-container">
     <ul>
-    <Link   to="/" className="home text-link">
+    <Link   exact to="/ComfyCouch.com" className="home text-link">
     <li>
     Home
     </li>
     </Link>
     <li>
-    <Link  to="/products" className="product text-link">Products</Link>  
+    <Link  exact to="/ComfyCouch.com/products" className="product text-link">Products</Link>  
     </li>
     <li>   
-    <Link  to="/aboutUs" className="about text-link">About</Link>
+    <Link  exact to="/ComfyCouch.com/aboutUs" className="about text-link">About</Link>
     </li>
     </ul>
     </nav>

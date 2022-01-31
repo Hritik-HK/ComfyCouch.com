@@ -1,9 +1,9 @@
 import React from 'react';
-import "./components/css/About.css";
-import aboutUsMain from "./assets/images/AboutUs1.jpeg";
-import Ycombinator from "./assets/logos/ycombinatorLogo.png";
-import elevation from "./assets/logos/elevationCapitalLogo.jpeg";
-import sequoia from "./assets/logos/SequoiaCapitalLogo.png";
+import "./css/About.css";
+import aboutUsMain from "../assets/images/AboutUs1.jpeg";
+import Ycombinator from "../assets/logos/ycombinatorLogo.png";
+import elevation from "../assets/logos/elevationCapitalLogo.jpeg";
+import sequoia from "../assets/logos/SequoiaCapitalLogo.png";
 
 export default function About() {
   return <div>
