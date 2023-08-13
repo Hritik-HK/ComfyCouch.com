@@ -1,20 +1,11 @@
 import React from 'react';
 import "./CartCard.css";
+import { useCartState } from '../../context/CartContext';
 
 export default function CartCard(props) {
-  
-  function handleRemove(){
-     props.RemoveFromCart(props.productID,"remove");
-  }
 
- 
- function handleIncrease(){
-   props.AddToCart(props.productID);
- }
-
- function handleDecrease(){
-  props.RemoveFromCart(props.productID,"decrease");
- }
+  const cartState=useCartState();
+  const dispatch=cartState.dispatch;
 
   return <div className='cartCard-container'>
 
@@ -24,15 +15,15 @@ export default function CartCard(props) {
            <div className="cart-product-detail">
              <h4>{props.itemName}</h4>
              <p>{props.itemCost} x{props.quantity}</p>
-              <button onClick={handleRemove}>Remove</button>
+              <button onClick={()=> dispatch({type: "REMOVE", payload:props.productID})}>Remove</button>
               </div>
 
         </div>
 
            <div className="cart-product-quantity">
-             <div className='minus' onClick={handleDecrease}>-</div>
+             <div className='minus' onClick={()=>dispatch({type: "DECREASE", payload:props.productID})}>-</div>
              <div>{props.quantity}</div>
-              <div className='plus' onClick={handleIncrease}>+</div>
+              <div className='plus' onClick={()=>dispatch({type: "INCREASE", payload:props.productID})}>+</div>
            </div>
 
   </div>;

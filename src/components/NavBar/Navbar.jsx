@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logos/logo.png";
 import accountIcon from "../../assets/logos/account.svg";
@@ -7,8 +6,6 @@ import {Link} from "react-router-dom";
 
 
 function Navbar({handleLogin,handleCart}){
-
-
 
     return (
     <header className="nav-bar" >

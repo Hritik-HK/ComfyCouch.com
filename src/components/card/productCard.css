@@ -52,3 +52,17 @@
   background-color: #d43200;
 }
 
+.green{
+  background-color: #079110;
+  border-radius: 4px;
+  font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    border-style: none;
+    padding: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin:0 5px;
+}
+

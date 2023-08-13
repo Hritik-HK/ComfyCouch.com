@@ -2,21 +2,29 @@ import React, { useState } from 'react';
 import Rating from './Rating';
 import "./productCard.css";
 import AddTocartAnimation from "../../assets/logos/AddTocartAnimation.gif"
+import { useCartState } from '../../context/CartContext';
 
 //rating,mrp, product name,
 export default function ProductCard(props) {
   
    
    const[AddToCartClicked,setAddToCartClicked]=useState(false);
-
-
-    
+   const cartState = useCartState();
+   const dispatch = cartState.dispatch
+   const cartData=cartState.state
 
     function handleAdd(){
-      props.AddToCart(props.productID);
+      // props.AddToCart(props.productID);
+      dispatch({ type: "ADD", payload: props.productID })
       setAddToCartClicked(true);
       setTimeout(()=>setAddToCartClicked(false),2100);
     }
+
+   const IsInCart = (state, id) => {
+      const result = cartData.find((item) => item.productID === id);
+      return result===undefined?false:true;
+    }
+    
 
  
   return <div className='card-container'>
@@ -34,7 +42,7 @@ export default function ProductCard(props) {
        </div>
 
        <div>
-         <button className="card-btn" onClick={handleAdd} >ADD TO CART</button>
+         {IsInCart(cartData,props.productID)?<button className="green" >ADDED</button> :<button className="card-btn" onClick={handleAdd} >ADD TO CART</button>}
        </div>
 
        </div>

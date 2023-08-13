@@ -61,7 +61,6 @@ export default function  CardSlider(props) {
           itemName={card.itemName} 
           itemStar={card.itemStar} 
           itemCost={card.itemCost}
-          AddToCart={props.AddToCart}
           slide={props.slide}
 
            />);

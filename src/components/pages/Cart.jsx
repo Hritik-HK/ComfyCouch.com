@@ -1,31 +1,16 @@
 import React from 'react';
-import "./css/cart.css";
+import "../css/cart.css";
 import {MdCancel} from "react-icons/md";
-import CartCard from './CartCard/CartCard';
+import CartCard from '../CartCard/CartCard';
 import {BsArrowRightSquareFill} from "react-icons/bs";
-import emptyCart from "../assets/images/empty_cart.png";
+import emptyCart from "../../assets/images/empty_cart.png";
+import { useCartState } from '../../context/CartContext';
 
 
 export default function Cart(props) {
-   
-  const{cartData}=props;
 
-  //order summary calculation
-
-  // const[subtotal,setSubtotal]=useState(0);
-  // const[gst,setGST]=useState(0);
-
-  //   function calculateSubtotal (){
-  //       let calSubtotal=0;
-  //         for(let i=0;i<props.cartData.length;i++){
-  //               calSubtotal=calSubtotal+(props.cartData[i].costInNum*props.cartData[i].quantity);
-  //         }
-  //      setSubtotal(calSubtotal);
-  //      let calGST=0.18*calSubtotal;
-  //      setGST(calGST);
-
-  //   }
-
+  const cartState = useCartState();
+  const cartData = cartState.state;
 
    const subtotal=cartData.reduce((accum,curr)=> accum+(curr.costInNum)*(curr.quantity),0);
    const tax=subtotal*0.18;
@@ -59,8 +44,6 @@ export default function Cart(props) {
                      itemCost={cartItem.itemCost}
                      costInNum={cartItem.costInNum}
                      quantity={cartItem.quantity}
-                     RemoveFromCart={props.RemoveFromCart}
-                     AddToCart={props.AddToCart}
                    />
                  </div>);
                })

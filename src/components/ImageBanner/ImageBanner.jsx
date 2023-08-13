@@ -18,7 +18,7 @@ export default function ImageBanner() {
 
   const imageData=[image1,image2,image3,image4];
 
-  const[bannerImage, setBannerImage]=useState(0);
+  const[bannerImage, setBannerImage]=useState(1);
 
   //lenth of array
   const len=imageData.length;
@@ -31,15 +31,15 @@ export default function ImageBanner() {
   }
 
 
-useEffect(()=>{
-const timer=setTimeout(()=>{
-  nextBtn();
-},4000);
+// useEffect(()=>{
+// const timer=setTimeout(()=>{
+//   nextBtn();
+// },4000);
 
-return ()=>{
-  clearTimeout(timer);
-}
-},[bannerImage]);
+// return ()=>{
+//   clearTimeout(timer);
+// }
+// },[bannerImage]);
 
  
     
