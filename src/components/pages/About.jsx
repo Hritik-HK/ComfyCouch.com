@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/About.css";
-import aboutUsMain from "../../assets/images/AboutUs1.jpeg";
+import aboutUsMain from "../../assets/images/AboutUs1.jpg";
 import Ycombinator from "../../assets/logos/ycombinatorLogo.png";
 import elevation from "../../assets/logos/elevationCapitalLogo.jpeg";
 import sequoia from "../../assets/logos/SequoiaCapitalLogo.png";

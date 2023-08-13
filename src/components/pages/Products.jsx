@@ -11,7 +11,8 @@ export default function Products() {
   <h1>ALL PRODUCTS</h1>
   </div>
 
-    <div className="products-card-container">
+    <div className="products-card-outter-container">
+    <div className="products-card-inner-container">
      {productsData.map((card)=>{
          return (<div className='products-page-container-card'>
              <ProductCard 
@@ -24,6 +25,7 @@ export default function Products() {
              />
          </div>);
      })}
+     </div>
     </div>
   </div>;
 }

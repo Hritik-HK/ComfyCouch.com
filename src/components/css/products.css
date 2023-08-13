@@ -16,12 +16,18 @@
     font-size: 2rem;
 }
 
-.products-card-container{
+.products-card-outter-container{
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-content:center;
+}
+.products-card-inner-container{
+    display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .products-page-container-card{
-    margin: 25px 0;
+    margin: 25px;
 }
