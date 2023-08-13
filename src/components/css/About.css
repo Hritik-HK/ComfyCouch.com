@@ -89,3 +89,11 @@
 .capital-firms img{
     width: 300px;
 }
+
+.loading{
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

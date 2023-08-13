@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../css/About.css";
 import aboutUsMain from "../../assets/images/AboutUs1.jpg";
 import Ycombinator from "../../assets/logos/ycombinatorLogo.png";
 import elevation from "../../assets/logos/elevationCapitalLogo.jpeg";
 import sequoia from "../../assets/logos/SequoiaCapitalLogo.png";
+import { Bars } from  'react-loader-spinner'
 
-export default function About() {
-  return <div>
+
+export default function About() { 
+
+  const[wait,setWait]=useState(true);
+
+  setTimeout(()=>setWait(false), 3000)
+
+
+  return (wait)?
+  <div className="loading">
+   <Bars
+  height="100"
+  width="100"
+  color="#f57242"
+  ariaLabel="bars-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+/>
+  </div>
+  :(<div>
   <div className="about-us-main">
    <img src={aboutUsMain} alt="About-Us" />
 
@@ -51,5 +71,5 @@ export default function About() {
    </div>
 
      
-  </div>;
+  </div>)
 }
