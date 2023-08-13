@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ComfyCouch.com/static/css/main.e3f06480.css",
-    "main.js": "/ComfyCouch.com/static/js/main.795ff148.js",
+    "main.css": "/ComfyCouch.com/static/css/main.17fc61c3.css",
+    "main.js": "/ComfyCouch.com/static/js/main.930ebd78.js",
     "static/media/slide4.jpg": "/ComfyCouch.com/static/media/slide4.9c94b88a697ab261b84c.jpg",
     "static/media/main2.jpg": "/ComfyCouch.com/static/media/main2.d97c7f0e65a45c404acf.jpg",
     "static/media/product1.jpg": "/ComfyCouch.com/static/media/product1.199c7430ca310a3e6419.jpg",
@@ -42,11 +42,11 @@
     "static/media/slick.woff": "/ComfyCouch.com/static/media/slick.295183786cd8a1389865.woff",
     "static/media/account.svg": "/ComfyCouch.com/static/media/account.9fd9547f6f53286029f1cea1b2b28ffe.svg",
     "index.html": "/ComfyCouch.com/index.html",
-    "main.e3f06480.css.map": "/ComfyCouch.com/static/css/main.e3f06480.css.map",
-    "main.795ff148.js.map": "/ComfyCouch.com/static/js/main.795ff148.js.map"
+    "main.17fc61c3.css.map": "/ComfyCouch.com/static/css/main.17fc61c3.css.map",
+    "main.930ebd78.js.map": "/ComfyCouch.com/static/js/main.930ebd78.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3f06480.css",
-    "static/js/main.795ff148.js"
+    "static/css/main.17fc61c3.css",
+    "static/js/main.930ebd78.js"
   ]
 }
