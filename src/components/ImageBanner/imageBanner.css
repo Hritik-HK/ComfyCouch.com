@@ -1,4 +1,10 @@
-.home-banner-container img{
+.home-banner-container img {
+    height:85vh;
+    width: 73vw;
+    border-radius: 15px;
+}
+
+.loading{
     height:85vh;
     width: 73vw;
     border-radius: 15px;

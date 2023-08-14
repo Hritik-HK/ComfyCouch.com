@@ -5,16 +5,24 @@ import Ycombinator from "../../assets/logos/ycombinatorLogo.png";
 import elevation from "../../assets/logos/elevationCapitalLogo.jpeg";
 import sequoia from "../../assets/logos/SequoiaCapitalLogo.png";
 import { Bars } from  'react-loader-spinner'
+import { useEffect } from 'react';
 
 
 export default function About() { 
 
-  const[wait,setWait]=useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  setTimeout(()=>setWait(false), 3000)
+  useEffect(() => {
+    const backgroundImage = new Image()
+    backgroundImage.src = aboutUsMain
+    backgroundImage.onload = () => {
+      setImageLoaded(true)
+    }
+  }, [])
 
 
-  return (wait)?
+
+  return (!imageLoaded)?
   <div className="loading">
    <Bars
   height="100"
